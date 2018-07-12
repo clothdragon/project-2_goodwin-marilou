@@ -1,5 +1,6 @@
 // Chip Component Stylesheet
 // ========================================
+
 .chip {
   display: flex;
   align-items: center;
@@ -16,9 +17,7 @@
     font-weight: bold;
   }
 
-  &chip__text-description {
-
-  }
+  &chip__text-description {}
 
   &__avatar {
     width: 50px;

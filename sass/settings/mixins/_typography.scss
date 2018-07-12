@@ -1,14 +1,12 @@
 // Typography Mixin Settings Stylesheet
 // ========================================
 $primary-font: 'Ubuntu', sans-serif;
-$script-font: 'Berkshire Swash', cursive;
-// Font Styles
+$script-font: 'Berkshire Swash', cursive; // Font Styles
 @mixin font-type($type, $style, $weight) {
   font-family: $type;
-  font-style:  $style;
+  font-style: $style;
   font-weight: $weight;
 }
-
 // Text Colors
 @each $name, $tones in $type-colors {
   $tone-color: nth($tones, 1);
@@ -17,7 +15,6 @@ $script-font: 'Berkshire Swash', cursive;
     color: $tone-color;
   };
 }
-
 
 body {
   font-family: $primary-font;
@@ -51,8 +48,8 @@ h4 {
 
 h5 {
   font-size: 20px;
-   color: $accent-red;
-   padding-bottom: $spacer-m;
+  color: $accent-red;
+  padding-bottom: $spacer-m;
 }
 
 h6 {
@@ -61,8 +58,7 @@ h6 {
   color: $accent-red;
   padding-bottom: $spacer-m;
 }
-
-@mixin color-squares ($color1, $color2){
+@mixin color-squares ($color1, $color2) {
   text-align: center;
   padding: $spacer-s;
   background-color: $color1;
