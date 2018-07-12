@@ -1,0 +1,52 @@
+// Colors Variables Settings Stylesheet
+// ========================================
+
+$accent-red: #c1272d;
+$dark-gray: #404041;
+$accent-purple: #540b7f;
+$accent-green: #5aaa3f;
+$error-red: #f90b0b;
+$background-white: #ffffff;
+$neutral-gray: #66667c;
+$dark-red:#510114;
+$error-pink: #dd7f9e;
+
+// Main Palette List
+$colors: (
+  accent-red:    $accent-red,
+  dark-gray:     $dark-gray,
+  accent-purple: $accent-purple,
+  accent-green:    $accent-green,
+  error-red: $error-red,
+  background-white: $background-white,
+  neutral-gray: $neutral-gray,
+  dark-red: $dark-red,
+  error-pink: $error-pink,
+);
+
+a {
+  color: $accent-red;
+  text-decoration: underline dotted;
+}
+
+a:hover {
+  color: $accent-green;
+}
+
+a:active {
+  color: $accent-green;
+}
+
+a:visited {
+  color: $accent-purple;
+}
+
+.nav-a {
+  text-decoration: none;
+  color: $background-white;
+}
+
+.nav-a:visited {
+  text-decoration: none;
+  color: darken($background-white, 10%);
+}

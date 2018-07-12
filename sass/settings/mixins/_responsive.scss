@@ -1,0 +1,14 @@
+// Responsive Mixin Settings Stylesheet
+// ========================================
+
+$x-small: '(max-width: 350px)';
+$small: '(min-width: 350px)';
+$medium: '(min-width: 675px)';
+$large: '(min-width: 999px)';
+$extra-large: '(min-width: 1200px)';
+
+@mixin media($media) {
+    @media only screen and #{$media} {
+        @content;
+    }
+}

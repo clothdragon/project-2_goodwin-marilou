@@ -1,0 +1,50 @@
+// Form Elements Stylesheet
+// ========================================
+
+
+// Form mixins
+@mixin input-style {
+  padding: $spacer-s;
+  margin-bottom: 10px;
+}
+
+// Label Styling -- Delete this if you are not using a label
+form {
+  width: 90%;
+  margin: auto;
+  background-color: lighten($neutral-gray, 50%);
+  padding: 10px;
+  border: solid 1px $dark-red;
+  border-radius: 10px 0 0 10px;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+.label {
+  padding: $spacer-s;
+  text-align: right;
+
+  &--error {
+    padding: $spacer-s;
+    text-align: right;
+    color: $accent-red;
+  }
+}
+
+// Basic Form Input Styling
+.input {
+  @include input-style;
+  background-color: lighten($accent-purple, 60%);
+
+
+  &--error {
+    background-color: lighten($accent-red, 40%);
+    @include input-style;
+  }
+}
+
+// Select Form Input Styling
+select {
+  @include input-style;
+  background-color: lighten($accent-purple, 60%);
+}

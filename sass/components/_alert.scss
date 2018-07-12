@@ -1,0 +1,22 @@
+// Alert Component Stylesheet
+// ========================================
+
+.alert {
+
+  &--error {
+    @include alert($error-pink, $dark-red);
+  }
+
+  &--success {
+    @include alert($accent-green, $background-white);
+  }
+
+  &--notification {
+    @include alert($neutral-gray, $background-white);
+  }
+}
+
+.alert-image {
+  width: 30px;
+  margin-right: 10px;
+}

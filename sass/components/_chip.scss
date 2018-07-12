@@ -1,0 +1,35 @@
+// Chip Component Stylesheet
+// ========================================
+.chip {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  &__text-container {
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-right: 10px;
+  }
+
+  &__text-title {
+    font-weight: bold;
+  }
+
+  &chip__text-description {
+
+  }
+
+  &__avatar {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    color: $background-white;
+    background: $dark-gray;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px $dark-red solid;
+  }
+}
