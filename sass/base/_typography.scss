@@ -1,21 +1,62 @@
 // Base Typography Stylesheet
 // This is where your base typography will go
 // ========================================
+body {
+  font-family: $primary-font;
+  color: $dark-gray;
+}
 
-h1 {}
+h1 {
+  font-family: $script-font;
+  font-size: 40px;
+  color: $accent-red;
+  padding-bottom: $spacer-xs;
+}
 
-h2 {}
+h2 {
+  font-family: $script-font;
+  font-size: 35px;
+  padding-bottom: $spacer-m;
+}
 
-h3 {}
+h3 {
+  font-family: $script-font;
+  font-size: 30px;
+  padding-bottom: $spacer-m;
+}
 
-h4 {}
+h4 {
+  font-size: 25px;
+  color: $accent-red;
+  padding-bottom: $spacer-m;
+}
 
-h5 {}
+h5 {
+  font-size: 20px;
+   color: $accent-red;
+   padding-bottom: $spacer-m;
+}
 
-h6 {}
-
-p {}
+h6 {
+  font-size: 15px;
+  font-weight: bold;
+  color: $accent-red;
+  padding-bottom: $spacer-m;
+}
 
 a {
-  &:hover {}
+  color: $accent-red;
+  text-decoration: underline dotted;
+}
+
+a:hover {
+  color: $accent-green;
+}
+
+a:active {
+  color: $accent-green;
+}
+
+a:visited {
+  color: $accent-purple;
 }

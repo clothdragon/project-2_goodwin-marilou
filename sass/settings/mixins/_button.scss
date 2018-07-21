@@ -15,6 +15,7 @@
   height: 30px;
   box-shadow: 2px 2px darken($background-value, 15%);
 }
+
 @mixin button-hover {
   font-family: $script-font;
   font-size: 25px;

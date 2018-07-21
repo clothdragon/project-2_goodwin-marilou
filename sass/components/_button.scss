@@ -1,7 +1,7 @@
 // Button Component Stylesheet
 // ========================================
-
 .button {
+
   &--primary {
     @include button ($accent-green, $background-white);
 

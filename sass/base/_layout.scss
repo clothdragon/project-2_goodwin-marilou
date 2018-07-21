@@ -6,7 +6,9 @@ body {
   min-width: 350px;
 }
 
-.header {}
+.header {
+  width: 100%;
+}
 
 .main {
   padding: $spacer-m;
@@ -16,21 +18,30 @@ body {
   &__section {
     margin: $spacer-lg $reset-0;
 
-    &--index {}
+    &--index {
+
+    }
   }
 }
 
 .item-container {
-  margin: $spacer-m $reset-0;
+    display: flex-grow;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    align-content: flex-end;
+    width: 100%;
 }
 
-.footer {}
+.footer {
+
+}
 
 .logo-header {
-  width: 40%;
-  min-width: 125px;
+  width: 35%;
+  flex-basis: 60px;
   max-width: 300px;
-  margin: $spacer-m;
+  margin: $spacer-xs;
 }
 
 .logo-display {
@@ -46,7 +57,9 @@ body {
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
-  @include media ($small) {
+  clear: both;
+
+  @include media ($small){
     flex-flow: row wrap;
     justify-content: flex-end;
   }
@@ -73,11 +86,9 @@ body {
 .primary-colors1 {
   @include color-squares($accent-red, $background-white);
 }
-
 .primary-colors2 {
   @include color-squares($background-white, $dark-gray);
 }
-
 .primary-colors3 {
   @include color-squares ($dark-gray, $background-white);
 }
@@ -85,7 +96,6 @@ body {
 .secondary-colors1 {
   @include color-squares ($error-red, $background-white);
 }
-
 .secondary-colors2 {
   @include color-squares ($accent-green, $background-white);
 }
@@ -93,11 +103,19 @@ body {
 .accent-colors1 {
   @include color-squares ($accent-purple, $background-white);
 }
-
 .accent-colors2 {
   @include color-squares ($neutral-gray, $background-white);
 }
-
 .accent-colors3 {
   @include color-squares ($dark-red, $background-white);
+}
+
+.nav-a {
+  text-decoration: none;
+  color: $background-white;
+}
+
+.nav-a:visited {
+  text-decoration: none;
+  color: darken($background-white, 10%);
 }

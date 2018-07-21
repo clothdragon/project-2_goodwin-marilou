@@ -1,8 +1,8 @@
 // Form Elements Stylesheet
 // ========================================
-// Label Styling -- Delete this if you are not using a label
 
-form {
+// Label Styling -- Delete this if you are not using a label
+.form {
   width: 90%;
   margin: auto;
   background-color: lighten($neutral-gray, 50%);
@@ -23,20 +23,21 @@ form {
     color: $accent-red;
   }
 }
-// Basic Form Input Styling
 
+// Basic Form Input Styling
 .input {
   @include input-style;
   background-color: lighten($accent-purple, 60%);
+
 
   &--error {
     background-color: lighten($accent-red, 40%);
     @include input-style;
   }
 }
-// Select Form Input Styling
 
-select {
+// Select Form Input Styling
+.dropdown {
   @include input-style;
   background-color: lighten($accent-purple, 60%);
 }

@@ -1,104 +1,24 @@
 // Background Mixin Settings Stylesheet
 // ========================================
+
 @each $color in $colors {
-  $name: nth($color, 1);
-  $background: nth($color, 2);
+  $name:          nth($color, 1);
+  $background:    nth($color, 2);
 
   .background--#{$name} {
     background-color: $background;
   }
 }
-@mixin meyer-reset {
-  a,
-  abbr,
-  acronym,
-  address,
-  applet,
-  article,
-  aside,
-  audio,
-  b,
-  big,
-  blockquote,
-  body,
-  canvas,
-  caption,
-  center,
-  cite,
-  code,
-  dd,
-  del,
-  details,
-  dfn,
-  div,
-  dl,
-  dt,
-  em,
-  embed,
-  fieldset,
-  figcaption,
-  figure,
-  footer,
-  form,
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  header,
-  hgroup,
-  html,
-  i,
-  iframe,
-  img,
-  ins,
-  kbd,
-  label,
-  legend,
-  li,
-  mark,
-  menu,
-  nav,
-  object,
-  ol,
-  output,
-  p,
-  pre,
-  q,
-  ruby,
-  s,
-  samp,
-  section,
-  small,
-  span,
-  strike,
-  strong,
-  sub,
-  summary,
-  sup,
-  table,
-  tbody,
-  td,
-  tfoot,
-  th,
-  thead,
-  time,
-  tr,
-  tt,
-  u,
-  ul,
-  var,
-  video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-  }
-  // Form mixins
-  @mixin input-style {
-    padding: $spacer-s;
-    margin-bottom: 10px;
-  }
+
+// Form mixins
+@mixin input-style {
+  padding: $spacer-s;
+  margin-bottom: 10px;
+}
+
+@mixin color-squares ($color1, $color2){
+  text-align: center;
+  padding: $spacer-s;
+  background-color: $color1;
+  color: $color2;
+}

@@ -1,136 +1,113 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-  <title>Your Daily Circus</title>
-  <link href="css/main.css" rel="stylesheet">
-  <link rel='shortcut icon' type='image/x-icon' href='images/logo.png' />
-  <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Ubuntu" rel="stylesheet">
-</head>
-
-<body>
-  <header class="header">
-    <img class="logo-header" src="images/ydc1.jpg" alt="Your Daily Circus Logo"></img>
-    <nav>
-      <ul class="nav">
-        <li class="nav__list">
-          <a class="nav-a" href="index.html">Home</a>
-        </li>
-        <li class="nav__list">
-          <a class="nav-a" href="elements.html">Elements</a>
-        </li>
-        <li class="nav__list">
-          <a class="nav-a" href="components.html">Components</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-  <main class="main">
-    <section class="main__section">
-      <h2>Components</h2>
-
+  <head>
+    <title>Your Daily Circus</title>
+    <link href="css/main.css" rel="stylesheet">
+    <link rel='shortcut icon' type='image/x-icon' href='images/logo.png' />
+    <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Ubuntu" rel="stylesheet">
+  </head>
+  <body>
+    <header class="header">
+      <img class="logo-header" src="images/ydc1.jpg" alt="Your Daily Circus Logo"></img>
+      <nav>
+        <ul class="nav">
+          <a class="nav-a" href="index.html"><li class="nav__list">
+            Home
+          </li></a>
+          <a class="nav-a" href="elements.html"><li class="nav__list">
+            Elements
+          </li></a>
+          <a class="nav-a" href="components.html"><li class="nav__list">
+            Components
+          </li></a>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
       <section class="main__section">
-        <h3>Alerts</h3>
-        <div class="item-container">
-
-          <div class="alert--error">
-            <img class="alert-image" src="images/logo.png" alt="error image"></src>
-            This is an error message.
+        <h2>Components</h2>
+        <section class="main__section">
+          <h3>Alerts</h3>
+          <div class="item-container">
+            <div class="alert--error">
+              <img class="alert-image" src="images/logo.png" alt="error image"></src>
+              This is an error message.
+            </div>
+            <div class="alert--success">
+              <img class="alert-image" src="images/logo.png" alt="error image"></src>
+              You have succeeded!
+            </div>
+            <div class="alert--notification">
+              <img class="alert-image" src="images/logo.png" alt="error image"></src>
+              This is a simple notification.
+            </div>
           </div>
-
-          <div class="alert--success">
-            <img class="alert-image" src="images/logo.png" alt="error image"></src>
-            You have succeeded!
+        </section>
+        <section class="main__section">
+          <h3>Buttons</h3>
+          <div class="item-container">
+            <div class="button--primary">
+              Accept
+            </div>
+            <div class="button--secondary">
+              Cancel
+            </div>
+            <div class="button--disabled">
+              Accept
+            </div>
           </div>
-
-          <div class="alert--notification">
-            <img class="alert-image" src="images/logo.png" alt="error image"></src>
-            This is a simple notification.
-          </div>
-        </div>
-      </section>
-
-      <section class="main__section">
-        <h3>Buttons</h3>
-        <div class="item-container">
-          <div class="button--primary">
-            Accept
-          </div>
-
-          <div class="button--secondary">
-            Cancel
-          </div>
-
-          <div class="button--disabled">
-            Accept
-          </div>
-
-        </div>
-      </section>
-
-      <section class="main__section">
-        <h3>Chips</h3>
-        <div class="item-container">
-
-          <div class="chip">
-
-            <div class="chip__text-container">
-              <div class="chip__text-title">
-                Marilou Goodwin
+        </section>
+        <section class="main__section">
+          <h3>Chips</h3>
+          <div class="item-container">
+            <div class="chip">
+              <div class="chip__text-container">
+                <div class="chip__text-title">
+                  Marilou Goodwin
+                </div>
+              </div>
+              <div class="chip__avatar">
+                MG
               </div>
             </div>
-
-            <div class="chip__avatar">
-              MG
-            </div>
-
           </div>
-
-        </div>
-        <div class="item-container">
-          <div class="chip">
-
-            <div class="chip__text-container">
-              <div class="chip__text-title">
-                Marilou Goodwin
+          <div class="item-container">
+            <div class="chip">
+              <div class="chip__text-container">
+                <div class="chip__text-title">
+                  Marilou Goodwin
+                </div>
+                <div class="chip__text-description">
+                  email@ufl.edu
+                </div>
               </div>
-              <div class="chip__text-description">
-                email@ufl.edu
+              <div class="chip__avatar">
+                MG
               </div>
             </div>
-
-            <div class="chip__avatar">
-              MG
-            </div>
-
           </div>
-
-        </div>
-      </section>
-
-      <section class="main__section">
-        <h3>Form Elements</h3>
-        <div class="item-container">
-          <form>
-            <label type="name" placeholder="Name" class="label">Name:</label>
-            <input class="input"></input>
-            <label type="name" placeholder="Please Enter your Name" class="label--error">*Name:</label>
-            <input class="input--error"></input>
-            <label class="label">State:</label>
-            <select>
+        </section>
+        <section class="main__section">
+          <h3>Form Elements</h3>
+          <div class="item-container">
+            <form class="form">
+              <label type="name" placeholder="Name" class="label">Name:</label>
+              <input class="input"></input>
+              <label type="name" placeholder="Please Enter your Name" class="label--error">*Name:</label>
+              <input class="input--error"></input>
+              <label class="label">State:</label>
+              <select class="dropdown">
                 <option value="Alabama">Alabama</option>
                 <option value="Arkansas">Arkansas</option>
                 <option value="Florida">Florida</option>
                 <option value="Georgia">Georgia</option>
               </select>
-          </form>
-        </div>
+            </form>
+          </div>
+        </section>
       </section>
-
-    </section>
-  </main>
-  <footer class="footer">
-  </footer>
-</body>
-
+    </main>
+    <footer class="footer">
+    </footer>
+  </body>
 </html>
