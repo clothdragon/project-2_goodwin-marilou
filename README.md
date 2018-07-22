@@ -4,7 +4,7 @@
 [Project 2 github link](https://github.com/clothdragon/project-2_goodwin-marilou)
 
 #### Link to website
-[YDC Website Link](http://marilougoodwin.com/ydc/index.html)
+[YDC Website Link](http://marilougoodwin.com/project-2_goodwin-marilou/)
 <!-- Edit this for Project 2 - Part 3 -->
 
 #### Instructions on how to view
