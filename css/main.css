@@ -27,27 +27,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-a {
-  color: #c1272d;
-  text-decoration: underline dotted; }
-
-a:hover {
-  color: #5aaa3f; }
-
-a:active {
-  color: #5aaa3f; }
-
-a:visited {
-  color: #540b7f; }
-
-.nav-a {
-  text-decoration: none;
-  color: #ffffff; }
-
-.nav-a:visited {
-  text-decoration: none;
-  color: #e6e6e6; }
-
 .background--accent-red {
   background-color: #c1272d; }
 
@@ -97,6 +76,43 @@ body {
   .main__section {
     margin: 25px 0; }
 
+.outline-header {
+  opacity: 0;
+  visibility: hidden;
+  line-height: 0; }
+
+.home-image-box {
+  display: grid;
+  grid-column-gap: 5px;
+  grid-template-columns: 1fr 2fr 1fr;
+  width: 90%;
+  margin: auto; }
+  @media only screen and (min-width: 675px) {
+    .home-image-box {
+      grid-column-gap: 15px; } }
+
+.home-image-div {
+  width: 100%;
+  margin: auto;
+  text-align: center; }
+
+.home-image-div p {
+  font-size: 30px;
+  font-weight: bold; }
+
+.button-div {
+  width: 250px;
+  margin: auto;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; }
+
+.home-images {
+  border: 1px solid #c1272d;
+  border-radius: 5%;
+  width: 100%; }
+
 .item-container {
   display: flex-grow;
   flex-direction: row;
@@ -104,6 +120,24 @@ body {
   align-items: baseline;
   align-content: flex-end;
   width: 100%; }
+
+.footer {
+  background-color: #c1272d;
+  width: 100%;
+  display: grid;
+  grid-column-gap: 5px;
+  grid-template-columns: 1fr 1fr; }
+
+.social-media {
+  display: flex;
+  flex-direction: row;
+  margin-left: 5%; }
+
+.date-script {
+  color: #ffffff;
+  text-align: right;
+  margin-right: 5%;
+  margin-top: 15px; }
 
 .logo-header {
   width: 35%;
@@ -300,8 +334,7 @@ a:visited {
   height: 30px;
   box-shadow: 2px 2px #3c722a; }
   .button--primary:hover {
-    font-family: "Berkshire Swash", cursive;
-    font-size: 25px; }
+    font-family: "Berkshire Swash", cursive; }
 .button--secondary {
   background-color: #c1272d;
   color: #ffffff;
@@ -317,8 +350,7 @@ a:visited {
   height: 30px;
   box-shadow: 2px 2px #811a1e; }
   .button--secondary:hover {
-    font-family: "Berkshire Swash", cursive;
-    font-size: 25px; }
+    font-family: "Berkshire Swash", cursive; }
 .button--disabled {
   background-color: #66667c;
   color: #404041;

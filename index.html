@@ -1,55 +1,90 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Your Daily Circus</title>
-    <link href="css/main.css" rel="stylesheet">
-    <link rel='shortcut icon' type='image/x-icon' href='images/logo.png' />
-    <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Ubuntu" rel="stylesheet">
-  </head>
-  <body>
-    <header class="header">
-      <div class="item-container">
-        <img class="logo-header" src="images/ydc1.jpg" alt="Your Daily Circus Logo"></img>
-        <div class="chip">
-          <div class="chip__text-container">
-            <div class="chip__text-title">
-              Marilou Goodwin
-            </div>
-            <div class="chip__text-description">
-              email@ufl.edu
-            </div>
+
+<head>
+  <title>Your Daily Circus</title>
+  <link href="css/main.css" rel="stylesheet">
+  <link rel='shortcut icon' type='image/x-icon' href='images/logo.png' />
+  <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Ubuntu" rel="stylesheet">
+</head>
+
+<body>
+  <header class="header">
+    <div class="item-container">
+      <a href="index.html"><img class="logo-header" src="images/ydc1.jpg" alt="Your Daily Circus Logo"></a>
+      <div class="chip">
+        <div class="chip__text-container">
+          <div class="chip__text-title">
+            Marilou Goodwin
           </div>
-          <div class="chip__avatar">
-            MG
+          <div class="chip__text-description">
+            email@ufl.edu
           </div>
         </div>
+        <div class="chip__avatar">
+          MG
+        </div>
+      </div>
       <nav>
         <ul class="nav">
-          <a class="nav-a" href="index.html"><li class="nav__list">
-            Home
-          </li></a>
-          <a class="nav-a" href="elements.html"><li class="nav__list">
-            Elements
-          </li></a>
-          <a class="nav-a" href="components.html"><li class="nav__list">
-            Components
-          </li></a>
+          <a class="nav-a" href="index.html">
+            <li class="nav__list">
+              Home
+            </li>
+          </a>
+          <a class="nav-a" href="about.html">
+            <li class="nav__list">
+              About
+            </li>
+          </a>
+          <a class="nav-a" href="cotact.html">
+            <li class="nav__list">
+              Contact
+            </li>
+          </a>
         </ul>
       </nav>
-    </header>
-    <main class="main">
-      <section class="main__section">
-        <div class="main__section--index">
-          <h1>Your Daily Circus</h1>
-          <h2>A Goal Tracking Application</h2>
-          <p>Circus skills are difficult to train and to track because they’re about the body, about flexibility and strength, and lifting other people rather than lifting easily numbered weights. This application will help narrow down to one or two specific goals at a time and help measure progress in photo form.</p>
-          <h3>Logos</h3>
-          <img class="logo-display" src="images/ydc1.jpg" alt="horizontal logo"></img>
-          <img class="logo-display" src="images/ydc2.jpg" alt="square logo"></img>
+  </header>
+  <main class="main">
+    <h6 class="outline-header">Do you Circus?</h6>
+    <section class="main__section">
+      <h6 class="outline-header">Let us help you improve your skills</h6>
+      <div class="main__section--index">
+        <h1>Are you Working on...</h1>
+        <div class="home-image-box">
+          <div class="home-image-div">
+            <p>Poses</p>
+            <img class="home-images" src="images/pose.jpg" alt="Trapeze Splits Pose" />
+          </div>
+          <div class="home-image-div">
+            <p>Flexibility</p>
+            <img class="home-images" src="images/flexibility.jpg" alt="Pole Splits" />
+          </div>
+          <div class="home-image-div">
+            <p>Moves</p>
+            <img class="home-images" src="images/move.jpg" alt="Lyra Hip Hang Catch" />
+          </div>
         </div>
-      </section>
-    </main>
-    <footer class="footer">
-    </footer>
-  </body>
+        <div class="home-image-div">
+          <h2>Join our Community</h2>
+          <p>Work together to achieve your goals</p>
+          <div class="button-div">
+            <div class="button--primary">Sign Up</div>
+            <div class="button--primary">Sign In</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="social-media">
+      <img src="images/facebook.png" alt="facebook image" />
+      <img src="images/pinterest.png" alt="facebook image" />
+      <img src="images/twitter.png" alt="facebook image" />
+      <img src="images/youtube.png" alt="facebook image" />
+    </div>
+    <div class="date-script">date</div>
+  </footer>
+</body>
+
 </html>
