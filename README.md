@@ -17,8 +17,12 @@
 
 #### Resources
 
+* [Reminder on flexbox codes](https://www.w3schools.com/css/css3_flexbox.asp)
+* [Reminder on grid codes](https://css-tricks.com/snippets/css/complete-guide-grid/)
+
 #### Deductions
+I have reviewed the list of deductions for this project and in the syllabus.
 
 #### Comments
-
+nothing now
 ---
