@@ -5,7 +5,6 @@
 
 #### Link to website
 [YDC Website Link](http://marilougoodwin.com/project-2_goodwin-marilou/)
-<!-- Edit this for Project 2 - Part 3 -->
 
 #### Instructions on how to view
 1. `git clone` the repository to view it locally.

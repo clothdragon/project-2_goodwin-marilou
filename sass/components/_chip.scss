@@ -4,7 +4,7 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  width: 200px;
+  width: 265px;
   float: right;
   margin-right: 3%;
   margin-top: 3%;
@@ -35,5 +35,12 @@
     align-items: center;
     justify-content: center;
     border: 2px $dark-red solid;
+
+    &--image {
+      background-color: $background-white;
+      width: 50px;
+      height: 50px;
+      align-self: baseline;
+    }
   }
 }

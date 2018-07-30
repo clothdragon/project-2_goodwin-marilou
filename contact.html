@@ -46,35 +46,38 @@
       </nav>
   </header>
   <main class="main">
-    <h6 class="outline-header">Do you Circus?</h6>
-    <section class="main__section">
-      <h6 class="outline-header">Let us help you improve your skills</h6>
-      <div class="main__section--index">
-        <h1>Are you Working on...</h1>
-        <div class="home-image-box">
-          <div class="home-image-div">
-            <p>Poses</p>
-            <img class="home-images" src="images/pose.jpg" alt="Trapeze Splits Pose" />
+    <div class="contact-info">
+      <h1>Contact Us</h1>
+      <h4>Contact Information:</h4>
+      <p>email: info@ydc.com<br /> phone: (123)333-5555</p>
+      <p>address: 123 Street Rd.<br /> City, St 12345</p>
+    </div>
+    <div class="contact-form">
+      <h4>Contact Form:</h4>
+      <div class="item-container">
+        <form class="form">
+          <label for="fullname" class="label">Name:</label>
+          <input type="text" class="input" name="fullname"></input>
+          <label for="email" class="label">Email:</label>
+          <input class="input" name="email" type="text"></input>
+          <label for="phone" class="label">Phone:</label>
+          <input class="input" name="phone" type="text"></input>
+          <label class="label" for="qtype">Question Type:</label>
+          <select class="dropdown" name="qtype">
+              <option value="none">--select--</option>
+              <option value="Tech Support">Tech Support</option>
+              <option value="Membership">Membership</option>
+              <option value="Abuse Report">Abuse Report</option>
+            </select>
+          <label for="question" class="label">Question:</label>
+          <textarea name="question" class="input" type="textarea"></textarea>
+          <div class="form-buttons">
+            <div type="submit" class="button--disabled">Submit</div>
+            <div type="reset" class="button--secondary">Reset</div>
           </div>
-          <div class="home-image-div">
-            <p>Flexibility</p>
-            <img class="home-images" src="images/flexibility.jpg" alt="Pole Splits" />
-          </div>
-          <div class="home-image-div">
-            <p>Moves</p>
-            <img class="home-images" src="images/move.jpg" alt="Lyra Hip Hang Catch" />
-          </div>
-        </div>
-        <div class="home-image-div">
-          <h2>Join our Community</h2>
-          <p>Work together to achieve your goals</p>
-          <div class="button-div">
-            <div class="button--primary">Sign Up</div>
-            <div class="button--primary">Sign In</div>
-          </div>
-        </div>
+        </form>
       </div>
-    </section>
+    </div>
   </main>
   <footer class="footer">
     <div class="social-media">

@@ -140,7 +140,7 @@ body {
   margin-top: 15px; }
 
 .logo-header {
-  width: 35%;
+  width: 25%;
   flex-basis: 60px;
   max-width: 300px;
   margin: 5px; }
@@ -232,6 +232,70 @@ body {
   text-decoration: none;
   color: #e6e6e6; }
 
+.contact-info {
+  width: 100%; }
+  @media only screen and (min-width: 675px) {
+    .contact-info {
+      width: 50%;
+      float: left; } }
+  @media only screen and (min-width: 999px) {
+    .contact-info {
+      width: 35%;
+      float: left; } }
+
+.contact-form {
+  width: 100%;
+  margin-bottom: 15px; }
+  @media only screen and (min-width: 675px) {
+    .contact-form {
+      width: 50%;
+      float: left; } }
+  @media only screen and (min-width: 999px) {
+    .contact-form {
+      width: 65%;
+      float: left; } }
+
+.about-main {
+  width: 100%; }
+  @media only screen and (min-width: 675px) {
+    .about-main {
+      width: 75%;
+      float: left; } }
+  @media only screen and (min-width: 999px) {
+    .about-main {
+      width: 70%;
+      float: left; } }
+
+.about-side {
+  width: 0px;
+  margin: auto;
+  opacity: 0;
+  visibility: hidden; }
+  @media only screen and (min-width: 675px) {
+    .about-side {
+      width: 20%;
+      float: left;
+      padding: 8px;
+      opacity: 1;
+      visibility: visible; } }
+  @media only screen and (min-width: 999px) {
+    .about-side {
+      width: 22%;
+      float: left; } }
+
+.about-bottom {
+  clear: both; }
+
+.review {
+  display: grid;
+  grid-template-columns: 265px 1fr;
+  grid-gap: 3px;
+  margin-bottom: 15px; }
+
+.blurb {
+  margin-left: 3%;
+  margin-top: 3%; }
+
 body {
   font-family: "Ubuntu", sans-serif;
   color: #404041; }
@@ -267,6 +331,9 @@ h6 {
   font-weight: bold;
   color: #c1272d;
   padding-bottom: 15px; }
+
+p {
+  margin-bottom: 15px; }
 
 a {
   color: #c1272d;
@@ -370,7 +437,7 @@ a:visited {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  width: 200px;
+  width: 265px;
   float: right;
   margin-right: 3%;
   margin-top: 3%; }
@@ -394,6 +461,11 @@ a:visited {
     align-items: center;
     justify-content: center;
     border: 2px #510114 solid; }
+    .chip__avatar--image {
+      background-color: #ffffff;
+      width: 50px;
+      height: 50px;
+      align-self: baseline; }
 
 .form {
   width: 90%;
@@ -401,9 +473,10 @@ a:visited {
   background-color: #efeff2;
   padding: 10px;
   border: solid 1px #510114;
-  border-radius: 10px 0 0 10px;
+  border-radius: 10px;
   display: grid;
-  grid-template-columns: 1fr 3fr; }
+  grid-template-columns: 1fr 3fr;
+  padding-top: 15px; }
 
 .label {
   padding: 10px;
@@ -416,7 +489,8 @@ a:visited {
 .input {
   padding: 10px;
   margin-bottom: 10px;
-  background-color: #e5c2fa; }
+  background-color: #e5c2fa;
+  padding-bottom: 15px; }
   .input--error {
     background-color: #f3c1c3;
     padding: 10px;
@@ -426,5 +500,14 @@ a:visited {
   padding: 10px;
   margin-bottom: 10px;
   background-color: #e5c2fa; }
+
+.form-buttons {
+  grid-column: span 2;
+  width: 250px;
+  margin: auto;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; }
 
 /*# sourceMappingURL=main.css.map */
