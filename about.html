@@ -4,6 +4,7 @@
 <head>
   <title>Your Daily Circus</title>
   <link href="css/main.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/tooltipster.bundle.min.css" />
   <link rel='shortcut icon' type='image/x-icon' href='images/logo.png' />
   <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Ubuntu" rel="stylesheet">
 </head>
@@ -15,45 +16,41 @@
       <div class="chip">
         <div class="chip__text-container">
           <div class="chip__text-title">
-            Marilou Goodwin
-          </div>
-          <div class="chip__text-description">
-            email@ufl.edu
+            Sign In
           </div>
         </div>
         <div class="chip__avatar">
-          MG
+          YDC
         </div>
       </div>
-      <nav>
-        <ul class="nav">
-          <a class="nav-a" href="index.html">
-            <li class="nav__list">
-              Home
-            </li>
-          </a>
-          <a class="nav-a" href="about.html">
-            <li class="nav__list">
-              About
-            </li>
-          </a>
-          <a class="nav-a" href="contact.html">
-            <li class="nav__list">
-              Contact
-            </li>
-          </a>
-        </ul>
-      </nav>
+    </div>
+    <nav>
+      <ul class="nav">
+        <a class="nav-a" href="index.html">
+          <li class="nav__list">
+            Home
+          </li>
+        </a>
+        <a class="nav-a" href="about.html">
+          <li class="nav__list">
+            About
+          </li>
+        </a>
+        <a class="nav-a" href="contact.html">
+          <li class="nav__list">
+            Contact
+          </li>
+        </a>
+      </ul>
+    </nav>
   </header>
   <main class="main">
     <div class="about-main">
       <h1>About</h1>
       <h2>Why?</h2>
-      <p>Circus skills are difficult to train and to track because they’re about the body, about flexibility and strength, and lifting other people rather than lifting easily numbered weights. This application will help narrow down to one or two specific
-        goals at a time and help measure progress in photo form.</p>
+      <p>Circus skills are difficult to train and to track because they're about the body, about flexibility and strength, and lifting other people rather than lifting easily numbered weights. This application will help narrow down to one or two specific goals at a time and help measure progress in photo form.</p>
       <h2>What?</h2>
-      <p>This application is intended to assist artists in reaching their goals on two fronts: It will create a tracking tool for daily stretches and exercises and, on the other front, groups with the same goals to help you meet them. You can be limit your
-        profile to only friends from your contact list or you can be open to others with the same goal to create new groups with new group goals. </p>
+      <p>This application is intended to assist artists in reaching their goals on two fronts: It will create a tracking tool for daily stretches and exercises and, on the other front, groups with the same goals to help you meet them. You can be limit your profile to only friends from your contact list or you can be open to others with the same goal to create new groups with new group goals. </p>
       <h2>Where?</h2>
       <p>An online community can be anywhere. If you have access to the internet you can work with us. This should assist those without a local studio in achieving their goals anyway.</p>
       <h2>When?</h2>
@@ -62,15 +59,14 @@
     <div class="about-side">
       <div class="home-image-div">
         <h3>Poses</h3>
-        <img class="home-images" src="images/pose.jpg" alt="Trapeze Splits Pose" />
+        <img class="home-images tooltip" src="images/pose.jpg" alt="Trapeze Splits Pose" title="testing" />
       </div>
-
       <div class="home-image-div">
-        <p>Flexibility</p>
+        <h3>Flexibility</h3>
         <img class="home-images" src="images/flexibility.jpg" alt="Pole Splits" />
       </div>
       <div class="home-image-div">
-        <p>Moves</p>
+        <h3>Moves</h3>
         <img class="home-images" src="images/move.jpg" alt="Lyra Hip Hang Catch" />
       </div>
     </div>
@@ -113,10 +109,8 @@
           </div>
         </div>
         <div class="blurb">
-          <p>I’ve been trying for years but never managed a split touchdown! Two months after joining, I got front splits, and another month later gave me side splits! It’s amazing!</p>
+          <p>I've been trying for years but never managed a split touchdown! Two months after joining, I got front splits, and another month later gave me side splits! It's amazing!</p>
         </div>
-      </div>
-
   </main>
   <footer class="footer">
     <div class="social-media">
@@ -127,6 +121,10 @@
     </div>
     <div class="date-script">date</div>
   </footer>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="/js/turnBox.js"></script>
+  <script src="js/main.js"></script>
+
 </body>
 
 </html>

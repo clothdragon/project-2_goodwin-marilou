@@ -68,13 +68,23 @@ body {
   width: 100%;
 }
 
+.sample-screen {
+  width: 100%;
+}
+
+#display {
+  width: 40%;
+  position: relative;
+  z-index: 1;
+  top: -325px;
+  margin: auto;
+  border: 2px solid black;
+}
+
 .item-container {
-    display: flex-grow;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: baseline;
-    align-content: flex-end;
+    display: grid;
     width: 100%;
+    grid-template-columns: 25% 75%;
 }
 
 .footer {
@@ -99,8 +109,7 @@ body {
 }
 
 .logo-header {
-  width: 25%;
-  flex-basis: 60px;
+  width: 100%;
   max-width: 300px;
   margin: $spacer-xs;
 }
@@ -211,7 +220,7 @@ body {
 }
 
 .about-main {
-  width: 100%;
+  width: 90%;
 
   @include media ($medium){
     width: 75%;
@@ -225,14 +234,14 @@ body {
 }
 
 .about-side {
-  width: 0px;
+  width: 1px;
   margin: auto;
   opacity: 0;
   visibility: hidden;
+  float: right;
 
   @include media ($medium){
     width: 20%;
-    float: left;
     padding: 8px;
     opacity: 1;
     visibility: visible;
