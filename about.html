@@ -4,9 +4,12 @@
 <head>
   <title>Your Daily Circus</title>
   <link href="css/main.css" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="css/tooltipster.bundle.min.css" />
   <link rel='shortcut icon' type='image/x-icon' href='images/logo.png' />
   <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Ubuntu" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="js/jquery.organictabs.js"></script>
+  <script src="js/tabs.js"></script>
 </head>
 
 <body>
@@ -45,37 +48,43 @@
     </nav>
   </header>
   <main class="main">
-    <div class="about-main">
+    <div id="tab-container">
       <h1>About</h1>
-      <h2>Why?</h2>
-      <p>Circus skills are difficult to train and to track because they're about the body, about flexibility and strength, and lifting other people rather than lifting easily numbered weights. This application will help narrow down to one or two specific goals at a time and help measure progress in photo form.</p>
-      <h2>What?</h2>
-      <p>This application is intended to assist artists in reaching their goals on two fronts: It will create a tracking tool for daily stretches and exercises and, on the other front, groups with the same goals to help you meet them. You can be limit your profile to only friends from your contact list or you can be open to others with the same goal to create new groups with new group goals. </p>
-      <h2>Where?</h2>
-      <p>An online community can be anywhere. If you have access to the internet you can work with us. This should assist those without a local studio in achieving their goals anyway.</p>
-      <h2>When?</h2>
-      <p>Whenever! The great thing about being online is that you can still do the work even if you have a crazy schedule. </p>
+      <div id="wrap">
+        <ul class="nav">
+          <li class="nav-one"><a href="#tab-1" class="current">Why</a></li>
+          <li class="nav-two"><a href="#tab-2">What</a></li>
+          <li class="nav-three"><a href="#tab-3">Where</a></li>
+          <li class="nav-four last"><a href="#tab-4">When</a></li>
+        </ul>
+        <div class="content-wrap">
+          <div id="tab-1">
+            <h2>Why?</h2>
+            <p>Circus skills are difficult to train and to track because they're about the body, about flexibility and strength, and lifting other people rather than lifting easily numbered weights. This application will help narrow down to one or two specific
+              goals at a time and help measure progress in photo form.</p>
+          </div>
+          <div id="tab-2" class="hide">
+            <h2>What?</h2>
+            <p>This application is intended to assist artists in reaching their goals on two fronts: It will create a tracking tool for daily stretches and exercises and, on the other front, groups with the same goals to help you meet them. You can be limit
+              your profile to only friends from your contact list or you can be open to others with the same goal to create new groups with new group goals. </p>
+          </div>
+          <div id="tab-3" class="hide">
+            <h2>Where?</h2>
+            <p>An online community can be anywhere. If you have access to the internet you can work with us. This should assist those without a local studio in achieving their goals anyway.</p>
+          </div>
+          <div id="tab-4" class="hide">
+            <h2>When?</h2>
+            <p>Whenever! The great thing about being online is that you can still do the work even if you have a crazy schedule. </p>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="about-side">
-      <div class="home-image-div">
-        <h3>Poses</h3>
-        <img class="home-images tooltip" src="images/pose.jpg" alt="Trapeze Splits Pose" title="testing" />
-      </div>
-      <div class="home-image-div">
-        <h3>Flexibility</h3>
-        <img class="home-images" src="images/flexibility.jpg" alt="Pole Splits" />
-      </div>
-      <div class="home-image-div">
-        <h3>Moves</h3>
-        <img class="home-images" src="images/move.jpg" alt="Lyra Hip Hang Catch" />
-      </div>
     </div>
     <div class="about-bottom">
       <h2>Join our Community</h2>
       <p>Work together to achieve your goals</p>
       <div class="button-div">
-        <div class="button--primary">Sign Up</div>
-        <div class="button--primary">Sign In</div>
+        <div class="button--primary" id="signinButton">Sign Up/Sign In</div>
       </div>
       <h2>Reviews</h2>
       <div class="review">
@@ -114,17 +123,13 @@
   </main>
   <footer class="footer">
     <div class="social-media">
-      <img src="images/facebook.png" alt="facebook image" />
-      <img src="images/pinterest.png" alt="facebook image" />
-      <img src="images/twitter.png" alt="facebook image" />
-      <img src="images/youtube.png" alt="facebook image" />
+      <img class="social" src="images/facebook.png" alt="facebook image" />
+      <img class="social" src="images/pinterest.png" alt="facebook image" />
+      <img class="social" src="images/twitter.png" alt="facebook image" />
+      <img class="social" src="images/youtube.png" alt="facebook image" />
     </div>
     <div class="date-script">date</div>
   </footer>
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-  <script type="text/javascript" src="/js/turnBox.js"></script>
-  <script src="js/main.js"></script>
-
 </body>
 
 </html>

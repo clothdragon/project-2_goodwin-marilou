@@ -12,6 +12,12 @@
   display: grid;
   grid-template-columns: 1fr 3fr;
   padding-top: 15px;
+
+  &--signin {
+    display: block;
+    margin: auto;
+    width: 250px;
+  }
 }
 
 .label {
@@ -30,6 +36,7 @@
   @include input-style;
   background-color: lighten($accent-purple, 60%);
   padding-bottom: 15px;
+  width: 90%;
 
   &--error {
     background-color: lighten($accent-red, 40%);

@@ -63,6 +63,9 @@ table {
 .text--white {
   color: white; }
 
+a:focus {
+  outline: 0; }
+
 body {
   min-width: 350px; }
 
@@ -101,12 +104,11 @@ body {
   font-weight: bold; }
 
 .button-div {
-  width: 250px;
-  margin: auto;
-  margin-top: 15px;
+  width: 350px;
+  margin: 15px auto auto;
   display: flex;
   flex-direction: row;
-  justify-content: space-around; }
+  justify-content: center; }
 
 .home-images {
   border: 1px solid #c1272d;
@@ -262,36 +264,44 @@ body {
       width: 65%;
       float: left; } }
 
-.about-main {
-  width: 90%; }
-  @media only screen and (min-width: 675px) {
-    .about-main {
-      width: 75%;
-      float: left; } }
-  @media only screen and (min-width: 999px) {
-    .about-main {
-      width: 70%;
-      float: left; } }
-
-.about-side {
-  width: 1px;
-  margin: auto;
-  opacity: 0;
-  visibility: hidden;
-  float: right; }
-  @media only screen and (min-width: 675px) {
-    .about-side {
-      width: 20%;
-      padding: 8px;
-      opacity: 1;
-      visibility: visible; } }
-  @media only screen and (min-width: 999px) {
-    .about-side {
-      width: 22%;
-      float: left; } }
-
 .about-bottom {
-  clear: both; }
+  clear: both;
+  text-align: center;
+  margin-top: 10px; }
+
+#wrap {
+  border-radius: 5px;
+  border: solid 1px #c1272d; }
+
+#signInModal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  padding-top: 80px;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #66667c;
+  background-color: rgba(0, 0, 0, 0.5); }
+
+#signIn-container {
+  display: block;
+  background-color: #ffffff;
+  width: 50%;
+  min-width: 250px;
+  min-height: 50%;
+  margin: auto;
+  padding: 5px;
+  border-radius: 5px; }
+
+.close {
+  display: block;
+  text-align: right; }
+
+.social--hover {
+  background-color: #ffffff; }
 
 .review {
   display: grid;
@@ -302,6 +312,11 @@ body {
 .blurb {
   margin-left: 3%;
   margin-top: 3%; }
+
+.hide {
+  position: absolute;
+  top: -9999px;
+  left: -9999px; }
 
 body {
   font-family: "Ubuntu", sans-serif;
@@ -404,7 +419,7 @@ a:visited {
   align-items: center;
   justify-content: center;
   font-size: 20px;
-  width: 80px;
+  width: 140px;
   height: 30px;
   box-shadow: 2px 2px #3c722a; }
   .button--primary:hover {
@@ -420,7 +435,7 @@ a:visited {
   align-items: center;
   justify-content: center;
   font-size: 20px;
-  width: 80px;
+  width: 140px;
   height: 30px;
   box-shadow: 2px 2px #811a1e; }
   .button--secondary:hover {
@@ -436,7 +451,7 @@ a:visited {
   align-items: center;
   justify-content: center;
   font-size: 20px;
-  width: 80px;
+  width: 140px;
   height: 30px;
   box-shadow: 2px 2px #434352; }
 
@@ -484,6 +499,10 @@ a:visited {
   display: grid;
   grid-template-columns: 1fr 3fr;
   padding-top: 15px; }
+  .form--signin {
+    display: block;
+    margin: auto;
+    width: 250px; }
 
 .label {
   padding: 10px;
@@ -497,7 +516,8 @@ a:visited {
   padding: 10px;
   margin-bottom: 10px;
   background-color: #e5c2fa;
-  padding-bottom: 15px; }
+  padding-bottom: 15px;
+  width: 90%; }
   .input--error {
     background-color: #f3c1c3;
     padding: 10px;

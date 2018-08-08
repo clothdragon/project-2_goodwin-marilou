@@ -6,6 +6,10 @@
   <link href="css/main.css" rel="stylesheet">
   <link rel='shortcut icon' type='image/x-icon' href='images/logo.png' />
   <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Ubuntu" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="js/jquery.organictabs.js"></script>
+  <script src="js/tabs.js"></script>
 </head>
 
 <body>
@@ -23,25 +27,25 @@
         </div>
       </div>
     </div>
-      <nav>
-        <ul class="nav">
-          <a class="nav-a" href="index.html">
-            <li class="nav__list">
-              Home
-            </li>
-          </a>
-          <a class="nav-a" href="about.html">
-            <li class="nav__list">
-              About
-            </li>
-          </a>
-          <a class="nav-a" href="contact.html">
-            <li class="nav__list">
-              Contact
-            </li>
-          </a>
-        </ul>
-      </nav>
+    <nav>
+      <ul class="nav">
+        <a class="nav-a" href="index.html">
+          <li class="nav__list">
+            Home
+          </li>
+        </a>
+        <a class="nav-a" href="about.html">
+          <li class="nav__list">
+            About
+          </li>
+        </a>
+        <a class="nav-a" href="contact.html">
+          <li class="nav__list">
+            Contact
+          </li>
+        </a>
+      </ul>
+    </nav>
   </header>
   <main class="main">
     <h6 class="outline-header">Do you Circus?</h6>
@@ -67,30 +71,66 @@
           <h2>Join our Community</h2>
           <p>Work together to achieve your goals</p>
           <div class="button-div">
-            <div class="button--primary">Sign Up</div>
-            <div class="button--primary">Sign In</div>
+            <div class="button--primary" id="signinButton">Sign Up/Sign In</div>
           </div>
         </div>
       </div>
-        <img class="sample-screen" src="images/program-sample.jpg" />
-        <div id="display">
-        </div>
+      <img class="sample-screen" src="images/program-sample.jpg" />
+      <div id="display">
+      </div>
     </section>
   </main>
+  <div id="signInModal">
+    <div id="signIn-container">
+      <p class="close">Close [x]</p>
+      <div id="wrap">
+        <ul class="nav">
+          <li class="nav-one"><a id="signin" href="#sign-in-tab" class="current">Sign In</a></li>
+          <li class="nav-two"><a id="signup" href="#sign-up-tab">Sign Up</a></li>
+        </ul>
+        <div class="content-wrap">
+          <div id="sign-in-tab" class="none">
+            <h2>Sign In</h2>
+            <form class="form--signin">
+              <label for="fullname" class="label">Name:</label><br />
+              <input type="text" class="input" name="fullname"></input><br />
+              <label for="password" class="label">Password:</label><br />
+              <input class="input" name="password" type="text"></input>
+              <div class="form-buttons">
+                <div type="submit" class="button--disabled">Submit</div>
+              </div>
+            </form>
+          </div>
+          <div id="sign-up-tab" class="hide">
+            <h2>Sign Up</h2>
+            <form class="form--signin">
+              <label for="fullname" class="label">Name:</label><br />
+              <input type="text" class="input" name="fullname"></input><br />
+              <label for="email" class="label">Email:</label><br />
+              <input class="input" name="email" type="text"></input>
+              <label for="password" class="label">Password:</label><br />
+              <input class="input" name="password" type="text"></input>
+              <div class="form-buttons">
+                <div type="submit" class="button--disabled">Submit</div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
   <footer class="footer">
     <div class="social-media">
-      <img src="images/facebook.png" alt="facebook button" />
-      <img src="images/pinterest.png" alt="pinterest button" />
-      <img src="images/twitter.png" alt="twitter button" />
-      <img src="images/youtube.png" alt="youtube button" />
+      <img class="social" src="images/facebook.png" alt="facebook button" />
+      <img class="social" src="images/pinterest.png" alt="pinterest button" />
+      <img class="social" src="images/twitter.png" alt="twitter button" />
+      <img class="social" src="images/youtube.png" alt="youtube button" />
     </div>
     <div class="date-script">date</div>
   </footer>
-
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script>
   <script src="js/jquery.magnifier.min.js"></script>
   <script src="js/main.js"></script>
-
 </body>
 
 </html>
