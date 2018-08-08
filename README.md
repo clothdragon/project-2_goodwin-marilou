@@ -7,7 +7,9 @@
 [YDC Website Link](http://marilougoodwin.com/project-2_goodwin-marilou/)
 
 #### Link to W3C's Validator
-[W3C Validator Link](https://validator.w3.org/)
+
+* [W3C Validator Link](https://validator.w3.org/nu/?doc=http%3A%2F%2Fmarilougoodwin.com%2Fproject-2_goodwin-marilou%2Findex.html)
+* [W3C CSS Validator Link](https://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Fmarilougoodwin.com%2Fproject-2_goodwin-marilou%2Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 
 #### Link to HTML5 Outliner
 [HTML5 Outliner](https://gsnedders.html5.org/outliner/)
